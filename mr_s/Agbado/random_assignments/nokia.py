@@ -49,11 +49,7 @@ def demo_phonebook():
     print(
         f"Phonebook: Phonebook:\n1. Search\n2. Service Nos.\n3. Add name\n4. Erase\n5. Edit.\n6.Assign tone.\n7. Send "
         f"b'/card.\n8. Options.\n9. Speed dials.\n10.Voice tags ")
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_message():
@@ -65,20 +61,12 @@ def demo_message():
              5. Templates.           
              6. Smileys.             
              7. Message settings''')
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_chat():
     print("3. Chat")
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_call_register():
@@ -91,11 +79,7 @@ def demo_call_register():
    6.Show call costs.             
    7. Call cost settings.         
    8. Prepaid credit.''')
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_tones():
@@ -109,11 +93,7 @@ def demo_tones():
          7. Warning and game tones. 
          8. Vibrating alert.        
          9. Screen saver''')
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_settings():
@@ -122,47 +102,27 @@ def demo_settings():
        2. Phone settings.                 
        3. Security settings.              
        4. Restore factory settings.''')
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_call_divert():
     print("7. Call divert")
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_games():
     print("8. Games")
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_calculator():
     print("9. Calculator")
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_reminders():
     print("10. Reminders")
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_clock():
@@ -173,26 +133,19 @@ def demo_clock():
            4. Stopwatch.                          
            5. Countdown timer.                    
            6. Auto update of date and time.''')
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list()
 
 
 def demo_profiles():
     print("12. Profiles")
-
-
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+    demo_phonebook_list
 
 
 def demo_sim_services():
     print("13. SIM services")
+    demo_phonebook_list()
 
 
-demo_phonebook_list = input("Select a menu: ")
-if demo_phonebook_list == "0":
-    demo_menu()
+def demo_phonebook_list():
+    if demo_phonebook_list == "0":
+        demo_menu()
