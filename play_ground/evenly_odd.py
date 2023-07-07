@@ -10,11 +10,7 @@
 # print(even)
 # print(odd)
 
-even = 0
-odd = 0
 
-joy = int(input("Enter a number: "))
-print("Odd")
 for number in range(joy, 0, -1):
 
     if number % 2 != 0:

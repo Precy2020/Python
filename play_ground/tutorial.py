@@ -1,16 +1,13 @@
-#
-# counter = 1
-# while counter < 2000:
-#     counter = counter * 2
-#     print(counter)
-#
-#
-#
-#
+for love in range(0, 1):
+    print("*", end=" ")
+print("F")
+for love in range(0, 2):
+    print("*", end=" ")
+print("B")
+for love in range(0, 3):
+    print("*", end=" ")
+print("C")
+for love in range(0, 5):
+    print("*", end=" ")
+print("A", end=" ")
 
-# me = '9'
-# print(type(me))
-
-# print(bool("abc"))
-def my_function(*kids):
-    print("The youngest child is " + kids[2])
