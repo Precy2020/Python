@@ -1,0 +1,6 @@
+define a function
+iterate over it first to get the length
+iterate over it the second time to get same for comparison
+compare the both iterables, if it is a duplicate return duplicate if not return not duplicate
+assign the list to a variable
+call the function in a display function called print

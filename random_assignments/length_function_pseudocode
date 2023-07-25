@@ -1,0 +1,5 @@
+define a function with a name (collection)
+create a variable called counter and initialize to zero
+create a for loop to iterate over the list collection
+initialize the previous counter to be plus one and return the counter
+call the function with the list in the parenthesis
