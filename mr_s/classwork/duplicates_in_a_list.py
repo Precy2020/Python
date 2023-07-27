@@ -1,10 +1,11 @@
 def my_function(cars):
-    empty = []
+    emptyList = []
     for index in cars:
-        if index != empty:
-            empty.append(index)
-    return empty
+        if index is not emptyList:
+            emptyList.append(index)
+    return emptyList
 
 
-car = [1, 2, 3, 3, 8, 9]
+car = ['green', 'red', 'red', 'green', 'purple', 'yellow']
 print(my_function(car))
+

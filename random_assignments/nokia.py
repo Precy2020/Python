@@ -34,7 +34,6 @@ def main_menu():
         main_menu()
 
 
-
 def phonebook():
     print('''****************************
              Phonebook:
@@ -457,4 +456,3 @@ if on == '0':
     SystemExit(0)
 else:
     print('invalid input!')
-
