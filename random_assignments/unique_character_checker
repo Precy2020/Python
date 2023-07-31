@@ -1,3 +1,5 @@
 create a function
 assign an empty list to a variable called emptyList
-iterate through the list usimg the for loop
+iterate through the list using the for loop
+if the list is not in the emptylist add the list to the empty list
+return the empty list

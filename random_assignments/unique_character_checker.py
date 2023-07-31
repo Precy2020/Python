@@ -1,7 +1,7 @@
 def my_function(cars):
     emptyList = []
     for index in cars:
-        if index not in emptyList:
+        if index is not emptyList:
             emptyList += [index]
     return emptyList
 
