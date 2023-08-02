@@ -1,10 +1,15 @@
 def collections(collection):
-    name = {' ': 0}
+    name = {}
+    count = 0
     for item in collection:
-        if item[0].casefold() == 's':
+        if item[0] == 'S'.casefold():
+            count += 1
+            name[item] = 1
+        if item[0] == 'S'.casefold():
             name[item] += 1
-    return name.items()
+
+    return name
 
 
-names = ['Samuel', 'glory', 'sola', 'shally', 'blessed']
+names = ['Samuel', 'samuel', 'glory', 'samuel', 'sola', 'shally', 'blessed']
 print(collections(names))
