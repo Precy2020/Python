@@ -36,5 +36,5 @@ print(card_number_length_checker())
 
 # def card_number_validator():
 #     global card_number
-#     for digits in card_number:
+#     for digits in card_number:    
 #         reverse = card_number[digits - 1]
