@@ -6,6 +6,13 @@
 #     print(my_file.write('005 Anointed 11\n'))
 #     my_file.close()
 
-with open('account.txt', mode='r') as my_file:
-    print(my_file.read())
 
+import json
+
+account_dict = {"account": [{'account': 100, 'name': 'jones', 'balance': 24.98}, ]}
+
+with open('account.json', 'w') as account:
+    json.dump(account_dict, account)
+
+with open('account.json', 'r') as account:
+    print(json.dumps(json.load(account), indent=4))
