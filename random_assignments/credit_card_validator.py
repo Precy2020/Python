@@ -1,12 +1,26 @@
-card_number = [int(input('Kindly enter your card number :) >> '))]
+card_number = str(input('Kindly enter your card number :) >> '))
 types = []
 length = []
+collect = []
+
+
+def card_number_validator():
+    global card_number
+    global collect
+
+    for digit in card_number:
+        collect = int(digit)
+        print(collect)
+
+
+card_number_validator()
 
 
 def card_type_checker():
     global card_number
     global types
-    for digit in card_number:
+    global collect
+    for _ in card_number:
         if card_number[0] == 4:
             types.append('Visa Card')
         elif card_number[0] == 5:
@@ -20,10 +34,13 @@ def card_type_checker():
         return types
 
 
+print(card_type_checker())
+
+
 def card_number_length_checker():
-    global card_number
+    global collect
     global length
-    for digits in card_number:
+    for digits in collect:
         if 13 < digits > 16:
             length.append('Valid Card Number')
         else:
@@ -31,10 +48,4 @@ def card_number_length_checker():
         return length
 
 
-print(card_type_checker())
 print(card_number_length_checker())
-
-# def card_number_validator():
-#     global card_number
-#     for digits in card_number:    
-#         reverse = card_number[digits - 1]

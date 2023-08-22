@@ -1,0 +1,5 @@
+write a python program that calculates the area of a circle based on the radius entered by the user.
+sample output:
+r = 1.1
+area = 3.801 format the result to 2 decimal places
+b. Also provide your solutions in OOP

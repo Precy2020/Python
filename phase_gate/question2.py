@@ -1,0 +1,5 @@
+"""WRITE A PYTHON PROGRAM TO FIND OUT WHAT VERSION OF PYTHON YOU ARE USING"""
+import sys
+
+print(sys.version)
+

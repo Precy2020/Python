@@ -6,5 +6,5 @@ def my_function(number):
             return largest
 
 
-listed = [2, 1, 3, 5, 8, 8, 7]
+listed = [2, 8, 3, 5, 9, 6, 7]
 print(my_function(listed))

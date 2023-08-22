@@ -1,0 +1,2 @@
+Write a python program to display the first and last colours from the following list.
+color_list = ["Red", "Green", "White", "Black"]

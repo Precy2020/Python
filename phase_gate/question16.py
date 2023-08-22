@@ -1,0 +1,25 @@
+"""WRITE A PYTHON PROGRAM TO PRINT ALL EVEN NUMBERS FROM A GIVEN LIST OF NUMBERS IN THE SAME ORDER AND STOP PRINTING ANY
+AFTER 237 IN THE SEQUENCE.
+SAMPLE NUMBER LIST:
+NUMBERS = [
+386, 462, 47, 418 907 344 236 375 823 566 597
+978 328 615 953 345
+399 162 758 219 918 237 412 566 826 248
+866 950 626 949 687 217
+815 67 104 58 512 24 892 894 767 553 81
+379 843 831 445 742 717
+958 743 527"""
+
+
+def display_even_number_in_the_list(lists):
+    for numbers in lists:
+        if numbers % 2 == 0:
+            print(numbers)
+        if numbers == 237:
+            break
+
+
+digits = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 918, 237,
+          412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81379, 843,
+          831, 445, 742, 717958, 743, 52]
+display_even_number_in_the_list(digits)
