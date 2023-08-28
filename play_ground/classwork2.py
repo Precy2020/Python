@@ -7,8 +7,9 @@
 #         print("Your password is secured and the length is: ")
 
 
-test = [123442]
-reverse = []
-for i in test:
-    reverse.append(test[i])
-print(reverse)
+# test = [123442]
+# reverse = []
+# for i in test:
+#     reverse.append(test[i])
+# print(reverse)
+
