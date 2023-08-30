@@ -1,38 +1,28 @@
 class Tv:
-    def __init__(self, channel, volume, on):
-        self.channel = channel
-        self.volume = volume
-        self.on = on
+    def __init__(self):
+        self.channel = 0
+        self.volume = 0
+        self.on = False
 
     def turn_on(self):
-        return None
+        return True
 
     def turn_off(self):
-        return None
+        return False
 
-    @property
-    def channel(self):
-        return None
-
-    @channel.getter
-    def channel(self):
+    def get_channel(self):
         return self.channel
 
-    @channel.setter
-    def channel(self, channel):
-        return None
+    def set_channel(self, channel):
+        if channel > 0 or channel < 100:
+            return self.channel
 
-    @property
-    def volume(self):
-        return None
-
-    @volume.getter
-    def volume(self):
+    def get_volume(self):
         return self.volume
 
-    @volume.setter
-    def volume(self, volume):
-        return None
+    def set_volume(self, volume):
+        if volume > 0 or volume < 100:
+            return volume
 
     def channel_up(self):
         return None

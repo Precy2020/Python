@@ -8,16 +8,16 @@ class TestTelevision(unittest.TestCase):
         self.assertTrue(True, Tv.turn_on)
 
     def test_that_the_television_can_turn_off(self):
-        self.assertFalse(False, Tv.turn_off)
+        self.assertFalse(False, Tv.turn_on)
 
     def test_that_the_television_have_a_channel(self):
-        self.assertTrue(True, Tv.channel)
+        self.assertTrue(True, Tv.get_channel)
 
     def test_that_the_television_have_volume(self):
-        self.assertTrue(True, Tv.volume)
+        self.assertTrue(True, Tv.get_volume)
 
-    def test_that_the_television_have_(self):
-        self.assertTrue(True, Tv.channel)
+    def test_that_the_television_have_channel(self):
+        self.assertTrue(True, Tv.get_channel)
 
     def test_that_the_television_have_a_channel_can_go_up(self):
         self.assertTrue(True, Tv.channel_up)
