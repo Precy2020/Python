@@ -1,3 +1,6 @@
+import exception_class
+
+
 class Animal:
     def __init__(self):
         number_of_nose = 1
