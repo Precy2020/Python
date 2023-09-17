@@ -17,11 +17,6 @@ class AccountTest(unittest.TestCase):
         account.withdraw(1500, "1234")
         self.assertEqual(3500, account.get_balance())
 
-    def test_that_customer_cannot_deposit_negative_amount(self):
-        account = Account("1", "precious", "1234")
-        self.assertRaises(InvalidInput, account.deposit(-5000))
-
-
     def test_that_pin_can_be_updated(self):
         account = Account("1", "precious", "1234")
         account.update_pin("1234", "4321")

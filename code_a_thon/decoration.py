@@ -8,12 +8,13 @@
 # print(big_list(6))
 
 def design(fn):
-    print('=' * 100)
+    print('><' * 50)
+    print('*' * 100)
+    print('><' * 50)
     fn()
-    print('-' * 100)
+    print('><' * 50)
+    print('*' * 100)
+    print('><' * 50)
     return fn
 
 
-@design
-def show():
-    print("I am a Virtuous Lady!!!")

@@ -1,0 +1,23 @@
+- The game has a 3 x 3 grid.
+- Players must select their mark before the game starts
+- Winning is either diagonally, vertically or horizontally.
+- if neither player has a straight line of 3 marks, it is considered a tie.
+
+Requirements;
+
+- initialize_board
+- print_board
+- make_move(player, row, col)
+- check_winner()
+- check_draw()
+- is_valid_move(row, col)
+- is_game_over()
+- reset_board()
+- play_game()
+
+
++ board
++ current_player
++ winner
++ game_over
++ draw
