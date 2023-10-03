@@ -1,6 +1,5 @@
 import unittest
 from bank_operation.account import Account
-from bank_operation.invalid_input import InvalidInput
 
 
 class AccountTest(unittest.TestCase):

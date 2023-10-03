@@ -1,25 +1,10 @@
 class Board:
     def __init__(self):
-        self.board = [[" " for _ in range(3)] for _ in range(3)]
+        self.board = []
 
-    def show_board(self):
-        for row in self.board:
-            print("!".join(row))
-            print("<><><>")
-
-    def move(self, rows, columns, player_symbol):
-        if self.is_valid_move(rows, columns):
-            self.board[rows][columns] = player_symbol
-        else:
-            print("Invalid move. Try again.")
-
-    def is_valid_move(self, rows, columns):
-        if 0 <= rows < 3 and 0 <= columns < 3 and self.board[rows][columns] == " ":
-            return True
-        return False
-
-
-board = Board()
-board.show_board()
-
-print(board)
+    def boards(self):
+        for index in range(3):
+            row = []
+            for index2 in range(3):
+                row.append('~')
+            self.board.append(row)
