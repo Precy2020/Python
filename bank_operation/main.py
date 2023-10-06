@@ -16,14 +16,14 @@ class Main:
     def main_menu():
         user_option = """
             ()()()()()()()()()()()()()()()()
-            >>>Welcome to Lamour Bank :)<<<
+             |>>Welcome to Lamour Bank :)<<|
             ()()()()()()()()()()()()()()()()
-            1). Create Account.
-            2). Deposit.
-            3). Withdraw.
-            4). Transfer.
-            5). Balance
-            6). Exit.
+            | 1). Create Account.          |
+            | 2). Deposit.                 |
+            | 3). Withdraw.                |
+            | 4). Transfer.                |
+            | 5). Balance.                 |
+            | 6). Exit.                    |
             ()()()()()()()()()()()()()()()()
             """
         user_input = Main.write(user_option)
@@ -42,6 +42,7 @@ class Main:
                 Main.exit()
             case _:
                 Main.show("Invalid selection!!!")
+                Main.main_menu()
 
     @staticmethod
     def balance():
@@ -94,6 +95,7 @@ class Main:
             Main.main_menu()
         except ValueError as e:
             Main.show(str(e))
+            Main.main_menu()
 
     @staticmethod
     def withdraw():
@@ -106,6 +108,7 @@ class Main:
             Main.main_menu()
         except ValueError as e:
             Main.show(str(e))
+            Main.main_menu()
 
     @staticmethod
     def exit():

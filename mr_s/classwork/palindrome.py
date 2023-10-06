@@ -1,4 +1,4 @@
-# string = input('Enter a string: ')
+# strings = input('Enter a strings: ')
 
 
 def my_string(string):

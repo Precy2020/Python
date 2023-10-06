@@ -1,5 +1,5 @@
-# def reverse(string):
-#     return string[:: -1]
+# def reverse(strings):
+#     return strings[:: -1]
 #
 #
 # word = "wind", "air", "blow", "glory"

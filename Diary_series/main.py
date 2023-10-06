@@ -24,7 +24,7 @@ def main():
 
                         )(=)(=)(=)(=)(=)(=)(=)(=)
                         """
-        userResponse = user_input(mainMenu)
+        userResponse = user_input(mainMenu + "\n>> ")
         if userResponse == "1":
             open_diary()
         elif userResponse == "2":
@@ -32,7 +32,8 @@ def main():
         elif userResponse == "3":
             exit_program()
         else:
-            exit_program()
+            display("Invalid input!!!")
+            main_menu()
 
     def open_diary():
         nonlocal journal
@@ -82,14 +83,19 @@ def main():
         elif userResponse == "5":
             exit_program()
         else:
+            display("Invalid input!!!")
             user_menu()
 
     def gist_us():
-        title = user_input("What's the title-> ")
-        body = user_input("What the gist-> ")
-        _validate(title, body)
-        display(title + "\n" + body + "\n" + "Gist saved successfully")
-        user_menu()
+        try:
+            title = user_input("What's the title-> ")
+            body = user_input("What the gist-> ")
+            _validate(title, body)
+            display(title + "\n" + body + "\n" + "Gist saved successfully")
+            user_menu()
+        except ValueError as e:
+            display(str(e))
+            user_menu()
 
     def _validate(title, body):
         if len(title) < 6 or len(body) < 6:
@@ -106,21 +112,14 @@ def main():
         try:
             identity = user_input("Put in your ID: ")
             username = user_input("Put in your username: ")
-        except ValueError:
-            display("Invalid ID. Please enter a valid integer.")
-            find_your_gist()
-            return
-
-        if not identity.isdigit():
-            display("Invalid Id")
-            find_your_gist()
-            return
-
-        try:
-            diary = diaries.findByUsername(username)
-            entry = diary.findEntryById(int(identity))
-            display(entry.getEntry())
-            user_menu()
+            if not identity.isdigit():
+                display("Invalid Id")
+                find_your_gist()
+            else:
+                diary = diaries.findByUsername(username)
+                entry = diary.findEntryById(int(identity))
+                display(entry.getEntry())
+                user_menu()
         except ValueError as e:
             display(str(e))
             user_menu()
